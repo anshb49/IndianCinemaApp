@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Random;
+
+
 public class Story extends AppCompatActivity {
 
     private Button fill;
@@ -57,8 +60,14 @@ public class Story extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    
+    public int generateRandomNumber() {
 
-    //make a random number generating method(numbers 1-4) to determine which of the 4 stories to use
+        Random rand = new Random();
+        int randomNum = rand.nextInt(4) + 1;
+        return randomNum;
+    }
+
 
     public void findViewsByIds() {
 
@@ -89,6 +98,16 @@ public class Story extends AppCompatActivity {
 
         findViewsByIds();
         makeEditTextToString();
+        if (generateRandomNumber() == 1) {
+            story.setText("1");
+        } else if (generateRandomNumber() == 2) {
+            story.setText("2");
+        } else if (generateRandomNumber() == 3) {
+            story.setText("3");
+        } else if (generateRandomNumber() == 4) {
+            story.setText("4");
+        }
+
         //if random number = 1 use chan's story and concatenate the strings
         // if = 2 then ansh's story
         //if = 3 then muhil's
