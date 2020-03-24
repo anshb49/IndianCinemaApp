@@ -99,7 +99,18 @@ public class Story extends AppCompatActivity {
         findViewsByIds();
         makeEditTextToString();
         if (generateRandomNumber() == 1) {
-            story.setText("1");
+            String madLib = "In this movie, " + adj + " " + heroName + " walks to the local tea stand " +
+                    "on the streets of " + cityName + " and buys his chai. He sips and sips and " +
+                    "sees a woman get robbed of purse by a thief. He chases after him, but he can’t " +
+                    "catch up. He sees a " + animalName + " and gets on top to ride it and resumes his " +
+                    "chase to the robber. " + heroName + " then jumps off the " + animalName + " and " +
+                    "tackles the villain. The villain is " + villainName + "! " +
+                    "As " + heroName + " reaches for the purse, insert " + villainName + " pulls " +
+                    "out a worn out " + weaponName + " but " + heroName + " slaps it away and grabs " +
+                    "the purse. He then hops on the " + animalName + " again and rides away to the " +
+                    "beautiful " + heroineName + " and they " + action + " through the streets " +
+                    "of " + cityName + ".";
+            story.setText(madLib);
         } else if (generateRandomNumber() == 2) {
             story.setText("2");
         } else if (generateRandomNumber() == 3) {
@@ -112,7 +123,5 @@ public class Story extends AppCompatActivity {
         // if = 2 then ansh's story
         //if = 3 then muhil's
         //if = 4 then sarish's
-
-
     }
 }
