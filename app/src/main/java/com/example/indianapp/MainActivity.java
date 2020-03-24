@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openInsert() {
+    private void openInsert() {
         Intent intent = new Intent(this, Story.class);
         startActivity(intent);
     }

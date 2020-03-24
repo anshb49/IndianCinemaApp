@@ -55,13 +55,13 @@ public class Story extends AppCompatActivity {
         });
     }
 
-    public void openMain() {
+    private void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
-    
-    public int generateRandomNumber() {
+
+    private int generateRandomNumber() {
 
         Random rand = new Random();
         int randomNum = rand.nextInt(4) + 1;
@@ -69,7 +69,7 @@ public class Story extends AppCompatActivity {
     }
 
 
-    public void findViewsByIds() {
+    private void findViewsByIds() {
 
         hero = findViewById(R.id.Hero);
         heroine = findViewById(R.id.Heroine);
@@ -82,7 +82,7 @@ public class Story extends AppCompatActivity {
         story = findViewById(R.id.Story);
     }
 
-    public void makeEditTextToString() {
+    private void makeEditTextToString() {
 
         heroName = hero.getText().toString();
         heroineName = heroine.getText().toString();
@@ -94,7 +94,7 @@ public class Story extends AppCompatActivity {
         cityName = city.getText().toString();
     }
 
-    public void createStory() {
+    private void createStory() {
 
         findViewsByIds();
         makeEditTextToString();
