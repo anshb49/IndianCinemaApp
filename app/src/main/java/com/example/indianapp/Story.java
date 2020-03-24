@@ -105,7 +105,7 @@ public class Story extends AppCompatActivity {
                     "catch up. He sees a " + animalName + " and gets on top to ride it and resumes his " +
                     "chase to the robber. " + heroName + " then jumps off the " + animalName + " and " +
                     "tackles the villain. The villain is " + villainName + "! " +
-                    "As " + heroName + " reaches for the purse, insert " + villainName + " pulls " +
+                    "As " + heroName + " reaches for the purse, " + villainName + " pulls " +
                     "out a worn out " + weaponName + " but " + heroName + " slaps it away and grabs " +
                     "the purse. He then hops on the " + animalName + " again and rides away to the " +
                     "beautiful " + heroineName + " and they " + action + " through the streets " +
@@ -118,7 +118,6 @@ public class Story extends AppCompatActivity {
         } else if (generateRandomNumber() == 4) {
             story.setText("4");
         }
-
         //if random number = 1 use chan's story and concatenate the strings
         // if = 2 then ansh's story
         //if = 3 then muhil's
