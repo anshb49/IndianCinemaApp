@@ -131,6 +131,7 @@ public class Story extends AppCompatActivity {
                     "skill of " + action + " which wins over" +
                     "the heart of " + villainName + ". " + "Finally, " + heroName + " and " + heroineName + " embrace" +
                     "to end the movie.";
+
             story.setText(madLib2);
         } else if (generateRandomNumber() == 3) {
             story.setText("3");
