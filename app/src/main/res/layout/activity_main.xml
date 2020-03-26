@@ -6,16 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <Button
         android:id="@+id/Insert"
         android:layout_width="247dp"
         android:layout_height="103dp"
-        android:text="Insert"
+        android:background="#5B00FFE1"
+        android:text="START"
+        android:textColor="@android:color/black"
+        android:textSize="30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
+        app:layout_constraintVertical_bias="0.882" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="413dp"
+        android:layout_height="375dp"
+        android:gravity="center"
+        android:text="INDIAN CINEMA MAD LIBS"
+        android:textColor="@android:color/black"
+        android:textSize="60dp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

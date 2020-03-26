@@ -92,6 +92,7 @@ public class Story extends AppCompatActivity {
         action = verb.getText().toString();
         weaponName = weapon.getText().toString();
         cityName = city.getText().toString();
+
     }
 
     private void createStory() {
@@ -112,7 +113,25 @@ public class Story extends AppCompatActivity {
                     "of " + cityName + ".";
             story.setText(madLib);
         } else if (generateRandomNumber() == 2) {
-            story.setText("2");
+            String madLib2 = "There is a " + adj  + "man named " + heroName + " who has failed school, but " +
+                    "is skilled at " + action + ". " + heroName + " decides to go and travel " + cityName +
+                    " where, we the audience know he's about to find the girl of his dreams, " + heroineName + ". " +
+                    "Of course, being an Indian movie, the main characters meet plenty of times, but " + heroineName +
+                    " does not have any interest in " + heroName + ". Suddenly, they miss the train" +
+                    "and have to drive together seeing many " + animalName + "s in order to meet their friends." +
+                    " From this time spent with " + heroName + ", " + heroineName + " actually falls in love with " +
+                    "the man she at first had no interest in." + heroineName + " begins to sing about this love" +
+                    "with the voice of Lata Mangeshkar. After the trip ends, " + heroName + " strives to" +
+                    "marry this girl who he knows also loves him. However, the man standing in their way is her father, " +
+                    villainName + " who desires that " + heroineName + " marry someone else. " + heroName +
+                    " comes to the marriage ceremony to try the win the hearts of everyone there, hoping that they will" +
+                    "be pleased when he reveals that he desires to marry " + heroineName + ". When " + villainName +
+                    " finds out what " + heroName + " is doing, " + villainName + " slaps him very realistically. " +
+                    heroName + " decides not to use " + weaponName + " and instead uses his special" +
+                    "skill of " + action + " which wins over" +
+                    "the heart of " + villainName + ". " + "Finally, " + heroName + " and " + heroineName + " embrace" +
+                    "to end the movie.";
+            story.setText(madLib2);
         } else if (generateRandomNumber() == 3) {
             story.setText("3");
         } else if (generateRandomNumber() == 4) {
