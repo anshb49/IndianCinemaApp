@@ -7,15 +7,15 @@
     tools:context=".MainActivity">
 
 
+
     <Button
         android:id="@+id/Insert"
         android:layout_width="247dp"
         android:layout_height="103dp"
         android:background="#5B00FFE1"
-        android:text="START"
-
-        android:textColor="@android:color/black"
+        android:text="@string/start"
         android:textSize="30sp"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,18 +24,14 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="376dp"
-        android:layout_height="360dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
+        android:layout_width="413dp"
+        android:layout_height="375dp"
         android:gravity="center"
-        android:text="INDIAN CINEMA  MAD LIBS"
+        android:text="INDIAN CINEMA MAD LIBS"
         android:textColor="@android:color/black"
-        android:textSize="60dp"
+        android:textSize="60sp"
         android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
