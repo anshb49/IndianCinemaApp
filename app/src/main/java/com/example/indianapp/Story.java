@@ -53,6 +53,7 @@ public class Story extends AppCompatActivity {
                 createStory();
             }
         });
+
     }
 
     private void openMain() {
@@ -65,7 +66,8 @@ public class Story extends AppCompatActivity {
 
         Random rand = new Random();
         int randomNum = rand.nextInt(4) + 1;
-        return randomNum;
+        return 2;
+        //return randomNum;
     }
 
 
@@ -113,22 +115,15 @@ public class Story extends AppCompatActivity {
                     "of " + cityName + ".";
             story.setText(madLib);
         } else if (generateRandomNumber() == 2) {
-            String madLib2 = "There is a " + adj + "man named " + heroName + " who has failed school, but " +
-                    "is skilled at " + action + ". " + heroName + " decides to go and travel " + cityName +
-                    " where, we the audience know he's about to find the girl of his dreams, " + heroineName + ". " +
-                    "Of course, being an Indian movie, the main characters meet plenty of times, but " + heroineName +
-                    " does not have any interest in " + heroName + ". " +
-                    " From this time spent with " + heroName + ", " + heroineName + " actually falls in love with " +
-                    heroineName + " begins to sing about this love" +
-                    "with the voice of Lata Mangeshkar. However, the man standing in their way is her father, " +
-                    villainName + " who desires that " + heroineName + " marry someone else. " + heroName +
-                    " comes to the marriage ceremony to try the win the hearts of everyone there, hoping that they will" +
-                    "be pleased when he reveals that he desires to marry " + heroineName + ". When " + villainName +
-                    " finds out what " + heroName + " is doing, " + villainName + " slaps him very realistically. " +
+            String madLib2 = "There is a " + adj + " man named " + heroName + " who decides to travel to " + cityName +
+                    " where he's about to find the girl of his dreams, " + heroineName + ". " +
+                    "At first they are bickering with each other, but suddenly " + heroineName +
+                    " and " + heroName + " fall in love. " + "The man standing in their " +
+                    "way is her father, " + villainName + " who desires that " + heroineName + " marry someone else. " + heroName +
+                    " comes to the marriage ceremony and wins everyone's hearts " + "." + "When " + villainName +
+                    " finds out what " + heroName + " is doing, " + villainName + " shouts at and slaps him. " +
                     heroName + " decides not to use " + weaponName + " and instead uses his special" +
-                    "skill of " + action + " which wins over" +
-                    "the heart of " + villainName + ". " + "Finally, " + heroName + " and " + heroineName + " embrace" +
-                    "to end the movie.";
+                    " skill of " + action + " which wins over " + villainName + ". ";
             story.setText(madLib2);
         } else if (generateRandomNumber() == 3) {
             story.setText("In 1967, it was rumored that " + cityName + " was plundered by a gang of thieves who raided people's " +

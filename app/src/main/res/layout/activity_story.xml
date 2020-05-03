@@ -164,21 +164,23 @@
         android:text="Animal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <TextView
         android:id="@+id/Story"
-        android:layout_width="383dp"
-        android:layout_height="351dp"
+        android:layout_width="395dp"
+        android:layout_height="301dp"
+        android:includeFontPadding="true"
         android:text="Story"
         android:textColor="@android:color/black"
-        android:textSize="17sp"
+        android:textSize="15sp"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.899" />
+        app:layout_constraintVertical_bias="0.894" />
 </androidx.constraintlayout.widget.ConstraintLayout>

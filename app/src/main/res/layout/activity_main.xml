@@ -7,20 +7,33 @@
     tools:context=".MainActivity">
 
 
-
     <Button
         android:id="@+id/Insert"
         android:layout_width="247dp"
         android:layout_height="103dp"
-        android:background="#5B00FFE1"
-        android:text="@string/start"
-        android:textSize="30sp"
+        android:background="#5BFF982C"
+        android:text="Mad Libs"
         android:textColor="@android:color/black"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="247dp"
+        android:layout_height="103dp"
+        android:background="#5B57FF28"
+        android:text="Movie Links"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
 
     <TextView
         android:id="@+id/textView"
