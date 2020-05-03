@@ -113,7 +113,7 @@ public class Story extends AppCompatActivity {
                     "of " + cityName + ".";
             story.setText(madLib);
         } else if (generateRandomNumber() == 2) {
-            String madLib2 = "There is a " + adj  + "man named " + heroName + " who has failed school, but " +
+            String madLib2 = "There is a " + adj + "man named " + heroName + " who has failed school, but " +
                     "is skilled at " + action + ". " + heroName + " decides to go and travel " + cityName +
                     " where, we the audience know he's about to find the girl of his dreams, " + heroineName + ". " +
                     "Of course, being an Indian movie, the main characters meet plenty of times, but " + heroineName +
@@ -134,7 +134,15 @@ public class Story extends AppCompatActivity {
 
             story.setText(madLib2);
         } else if (generateRandomNumber() == 3) {
-            story.setText("3");
+            story.setText("In 1967, it was rumored that " + cityName + " was plundered by a gang of thieves who raided people's " +
+                    "homes, robbed businesses, and set fire to the city. Many years later an adult man " + heroName + " is the only " +
+                    "surviving member of this massacre. After a long time of mourning his parents death, he became " + adj + " to a fault. " +
+                    "He was also wealthy, inheriting his father's land which included three " + animalName + "s. After many months, his depression had turned into rage, " +
+                    "a rage determined to find the last living members of the gang that raided his family and bring justice to everyone who died in " + cityName + " that " +
+                    "night. " + heroName + " researched evry part of the attack, until he realized that the gang acted under " + villainName + " an infamous criminal, wanted " +
+                    "for dozens of crimes. " + heroName + " was scouting out a compond he believed to house this fugative, when he was suddenly approached by " + heroineName + " " +
+                    "who inquired on why he was scouting out this compound. " + heroName + " told " + heroineName + " that they wouldn't understand, however " + heroineName + " reassur" +
+                    "ded \"I understand everything, you aren't the only survivor of the attack \". Soon they both grabbed their" + weaponName + "s and " + verb + " toward the compound to bring justice for the people of " + cityName);
         } else if (generateRandomNumber() == 4) {
             story.setText("4");
         }
