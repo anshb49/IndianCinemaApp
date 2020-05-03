@@ -9,20 +9,20 @@
 
     <TextView
         android:id="@+id/Directions"
-        android:layout_width="260dp"
-        android:layout_height="113dp"
+        android:layout_width="361dp"
+        android:layout_height="34dp"
         android:text="Fill in the Below Values"
         android:textAllCaps="true"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <Button
         android:id="@+id/Fill"

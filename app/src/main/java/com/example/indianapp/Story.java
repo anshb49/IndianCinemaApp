@@ -41,6 +41,7 @@ public class Story extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
 
+
         cancel = findViewById(R.id.Cancel);
         fill = findViewById(R.id.Fill);
         cancel.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +55,10 @@ public class Story extends AppCompatActivity {
             }
         });
 
+
     }
+
+
 
     private void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
@@ -143,4 +147,6 @@ public class Story extends AppCompatActivity {
         //if = 3 then muhil's
         //if = 4 then sarish's
     }
+
+
 }

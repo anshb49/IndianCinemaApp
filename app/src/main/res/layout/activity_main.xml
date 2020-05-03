@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-        android:id="@+id/insert"
+        android:id="@+id/insertMovie"
         android:layout_width="247dp"
         android:layout_height="103dp"
         android:background="#5B57FF28"
@@ -40,11 +40,23 @@
         android:layout_width="413dp"
         android:layout_height="375dp"
         android:gravity="center"
-        android:text="INDIAN CINEMA MAD LIBS"
+        android:text="INDIAN CINEMA APP"
         android:textColor="@android:color/black"
         android:textSize="60sp"
         android:textStyle="normal|bold"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="495dp"
+        android:layout_height="807dp"
+        android:alpha="0.2"
+        android:fadingEdge="horizontal|vertical"
+        android:tint="#00FF6969"
+        android:visibility="visible"
+        app:srcCompat="@drawable/india_flag"
+        tools:layout_editor_absoluteX="-42dp"
+        tools:layout_editor_absoluteY="-257dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

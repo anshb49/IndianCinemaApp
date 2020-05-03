@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button insert;
+    private Button movie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,14 @@ public class MainActivity extends AppCompatActivity {
                 openInsert();
             }
         });
+
+
+
     }
 
     private void openInsert() {
         Intent intent = new Intent(this, Story.class);
         startActivity(intent);
     }
+
 }
