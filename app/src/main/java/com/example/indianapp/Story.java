@@ -140,6 +140,20 @@ public class Story extends AppCompatActivity {
                     "who inquired on why he was scouting out this compound. " + heroName + " told " + heroineName + " that they wouldn't understand, however " + heroineName + " reassur" +
                     "ded \"I understand everything, you aren't the only survivor of the attack \". Soon they both grabbed their" + weaponName + "s and " + verb + " toward the compound to bring justice for the people of " + cityName);
         } else if (generateRandomNumber() == 4) {
+            String madLib4 = "In this movie, the main character, " + heroName + "who has amnesia due to the actions of "
+                    + villainName + ". Because of his condition, he has to take pictures of everything so he remembers it " +
+                    "as he forgets things every 15 minutes. " +  "Eventually, he starts to form very little memories of " + villainName
+                    + "and how he " + verb + "ed " + heroineName + ". He begins to plot his revenge by" + verb + "ing " + villainName + "'s gang member until he can find out who "
+                    + villainName + "actually is. Initially, " + villainName + "does not know he is being targeted until a couple of " +
+                    "his gang members are " + verb + "ed. This worries him and causes him to begin searching for everyone he has wronged in " +
+                    "the past to " + verb + " them first. He eventually finds out " + heroName + " is trying to " + verb + "him, and decides to "
+                    + action + " all of " + heroName + "'s photos and tattoos that help him remember. However, once " + heroName + "'s friend" +
+                    " finds out about what " + villainName + "did, she helps " + heroName + "by reminding him of all his memories. Once he relearns" +
+                    " this information, he immediately goes to " + verb + " " + villainName + ", but he is met by all of " + villainName + "'s goons." +
+                    "Regardless, he " + verb + "s all the goons and starts to fight " + villainName + " when he forgets who " + villainName + "is." +
+                    heroName + " is then tricked by " + villainName + " and " + villainName + " impales him and is about to " + verb " his friend " +
+                    "when " + heroName + " remembers " + villainName + " " + verb + "ing " + heroineName + " which gives him the strength to "
+                    + verb + " " + villainName + ".";
             story.setText("4");
         }
         //if random number = 1 use chan's story and concatenate the strings
