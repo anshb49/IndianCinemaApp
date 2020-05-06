@@ -101,18 +101,17 @@ public class Story extends AppCompatActivity {
         findViewsByIds();
         makeEditTextToString();
         if (generateRandomNumber() == 1) {
-            String madLib = "In this movie, " + adj + " " + heroName + " walks to the local tea stand " +
-                    "on the streets of " + cityName + " and buys his chai. He sips and sips and " +
-                    "sees a woman get robbed of purse by a thief. He chases after him, but he can’t " +
-                    "catch up. He sees a " + animalName + " and gets on top to ride it and resumes his " +
-                    "chase to the robber. " + heroName + " then jumps off the " + animalName + " and " +
-                    "tackles the villain. The villain is " + villainName + "! " +
-                    "As " + heroName + " reaches for the purse, " + villainName + " pulls " +
-                    "out a worn out " + weaponName + " but " + heroName + " slaps it away and grabs " +
-                    "the purse. He then hops on the " + animalName + " again and rides away to the " +
-                    "beautiful " + heroineName + " and they " + action + " through the streets " +
-                    "of " + cityName + ".";
-            story.setText(madLib);
+            String madlib = "In this movie which takes place in " + cityName + ", " + adj + " " + heroName +
+                    " is enlisted by an ex-police officer. " + "He and his friend were once " +
+                    "fleeing this cop and actually handcuffed. But ironically, " + "the ex-cop needs" +
+                    " their help against the evil " + villainName + "! This villain killed the cop's " +
+                    "entire family and cut off his arm for arresting him. " + heroName + " falls in love with " + heroineName + ". "
+                    + heroName + " " + "and his friend decide to take on this mission and bring " + villainName + " alive. "
+                    + "They take their " + weaponName + "s and " + animalName + "s to find " + villainName + ". " +
+                    "At some point " + heroName + "'s friend is taken by " + villainName + ", so he takes " +
+                    "his " + weaponName + " and goes to to save him. He " + action + " and saves his friend, but he " +
+                    "dies due to a gun wound. However, at the end, " + villainName + " is given to the police.";
+            story.setText(madlib);
         } else if (generateRandomNumber() == 2) {
             String madLib2 = "There is a " + adj + " man named " + heroName + " who decides to travel to " + cityName +
                     " where he's about to find the girl of his dreams, " + heroineName + ". " +
@@ -151,11 +150,5 @@ public class Story extends AppCompatActivity {
                     + action + " " + villainName + ".";
             story.setText(madLib4);
         }
-        //if random number = 1 use chan's story and concatenate the strings
-        // if = 2 then ansh's story
-        //if = 3 then muhil's
-        //if = 4 then sarish's
     }
-
-
 }
