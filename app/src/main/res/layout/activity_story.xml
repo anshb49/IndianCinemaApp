@@ -171,8 +171,8 @@
 
     <TextView
         android:id="@+id/Story"
-        android:layout_width="395dp"
-        android:layout_height="301dp"
+        android:layout_width="389dp"
+        android:layout_height="358dp"
         android:includeFontPadding="true"
         android:text="Story"
         android:textColor="@android:color/black"

@@ -44,19 +44,9 @@
         android:textColor="@android:color/black"
         android:textSize="60sp"
         android:textStyle="normal|bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="2dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="495dp"
-        android:layout_height="807dp"
-        android:alpha="0.2"
-        android:fadingEdge="horizontal|vertical"
-        android:tint="#00FF6969"
-        android:visibility="visible"
-        app:srcCompat="@drawable/india_flag"
-        tools:layout_editor_absoluteX="-42dp"
-        tools:layout_editor_absoluteY="-257dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
