@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button insert;
-    private Button movie;
+    private Button movieLinks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +23,22 @@ public class MainActivity extends AppCompatActivity {
                 openInsert();
             }
         });
+        movieLinks = findViewById(R.id.insertMovie);
+        movieLinks.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                openMovieLinks();
+            }
+        });
 
     }
 
     private void openInsert() {
         Intent intent = new Intent(this, Story.class);
+        startActivity(intent);
+    }
+
+    private void openMovieLinks() {
+        Intent intent = new Intent(this, MovieLinks.class);
         startActivity(intent);
     }
 

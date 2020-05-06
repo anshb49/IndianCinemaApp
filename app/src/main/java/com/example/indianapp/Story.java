@@ -54,11 +54,7 @@ public class Story extends AppCompatActivity {
                 createStory();
             }
         });
-
-
     }
-
-
 
     private void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
