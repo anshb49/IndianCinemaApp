@@ -7,6 +7,22 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="352dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="CWL/MACS 207"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.267" />
+
     <Button
         android:id="@+id/Insert"
         android:layout_width="247dp"
@@ -37,16 +53,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="413dp"
-        android:layout_height="375dp"
+        android:layout_width="407dp"
+        android:layout_height="188dp"
         android:gravity="center"
-        android:text="INDIAN CINEMA APP"
+        android:text="Indian Cinema in Context"
         android:textColor="@android:color/black"
         android:textSize="60sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
