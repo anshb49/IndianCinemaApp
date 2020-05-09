@@ -1,68 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:scrolling_image_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/subHeading"
-        android:layout_width="352dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:gravity="center"
-        android:text="CWL/MACS 207"
-        android:textColor="@android:color/black"
-        android:textSize="30dp"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.267" />
+    <com.q42.android.scrollingimageview.ScrollingImageView
+        android:id="@+id/scrolling_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        scrolling_image_view:speed="1dp"
+        scrolling_image_view:src="@drawable/cinema" />
 
-    <Button
-        android:id="@+id/Insert"
-        android:layout_width="247dp"
-        android:layout_height="103dp"
-        android:background="#5BFF982C"
-        android:text="Mad Libs"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+    <com.q42.android.scrollingimageview.ScrollingImageView
+        android:id="@+id/scrolling_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        scrolling_image_view:speed="2.5dp"
+        scrolling_image_view:src="@drawable/cinema" />
 
-    <Button
-        android:id="@+id/insertMovie"
-        android:layout_width="247dp"
-        android:layout_height="103dp"
-        android:background="#5B57FF28"
-        android:text="Movie Links"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="407dp"
-        android:layout_height="188dp"
-        android:gravity="center"
-        android:text="Indian Cinema in Context"
-        android:textColor="@android:color/black"
-        android:textSize="60sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/insertMovie"
+            android:layout_width="247dp"
+            android:layout_height="103dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="166dp"
+            android:background="#5B57FF28"
+            android:text="Movie Links"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/Insert"
+            android:layout_width="247dp"
+            android:layout_height="103dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="302dp"
+            android:background="#5BFF982C"
+            android:text="Mad Libs"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/subHeading"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="499dp"
+            android:gravity="center"
+            android:text="CWL/MACS 207"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="186dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="544dp"
+            android:gravity="center"
+            android:text="Indian Cinema in Context"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FCFF9800"
+            android:textSize="50sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+</FrameLayout>
