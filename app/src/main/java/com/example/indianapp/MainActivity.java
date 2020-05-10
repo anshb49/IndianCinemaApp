@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button insert;
     private Button movieLinks;
+    private Button charts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,22 @@ public class MainActivity extends AppCompatActivity {
                 openInsert();
             }
         });
+
         movieLinks = findViewById(R.id.insertMovie);
         movieLinks.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 openMovieLinks();
             }
         });
+
+        charts = findViewById(R.id.charts);
+        charts.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View view) {
+                openActorRanks();
+            }
+        });
+
+
 
     }
 
@@ -39,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void openMovieLinks() {
         Intent intent = new Intent(this, MovieLinks.class);
+        startActivity(intent);
+    }
+
+    private void openActorRanks() {
+        Intent intent = new Intent(this, ActorRanks.class);
         startActivity(intent);
     }
 
