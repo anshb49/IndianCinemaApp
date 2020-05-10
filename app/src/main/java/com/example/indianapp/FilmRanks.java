@@ -17,29 +17,25 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class ActorRanks extends AppCompatActivity {
-
-    private final String[] FILMS = new String[]{"Awara", "Shree 420", "Kati Patang", "Sholay", "QSQT",
-            "Roja", "Guru", "DDLJ", "K3G", "Ghajini", "Lagaan", "Chak De India",
-            "Slumdog Millionaire", "Gully Boy"};
-
+public class FilmRanks extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.actor_rank);
+        setContentView(R.layout.film_rank);
 
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
-        pieEntries.add(new PieEntry(111, "Akshay Kumar"));
-        pieEntries.add(new PieEntry(96, "Ajay Devgn"));
-        pieEntries.add(new PieEntry(77, "Salman Khan"));
-        pieEntries.add(new PieEntry(62, "Shah Rukh Khan"));
-        pieEntries.add(new PieEntry(101, "Sanjay Dutt"));
-        pieEntries.add(new PieEntry(134, "Jakie Shroff"));
-        pieEntries.add(new PieEntry(96, "Sunil Shetty"));
-        pieEntries.add(new PieEntry(68, "Amitabh Bachchan"));
-        pieEntries.add(new PieEntry(34, "Aamir Khan"));
-        pieEntries.add(new PieEntry(67, "Anil Kapoor"));
+        pieEntries.add(new PieEntry(1957, "Dangal (2016)"));
+        pieEntries.add(new PieEntry(1807, "Baahubali 2 (2017)"));
+        pieEntries.add(new PieEntry(872, "Bajrangi Bhaijaan (2015)"));
+        pieEntries.add(new PieEntry(834, "Secret Superstar (2017)"));
+        pieEntries.add(new PieEntry(742, "PK (2014)"));
+        pieEntries.add(new PieEntry(680, "2.0 (2018)"));
+        pieEntries.add(new PieEntry(615, "Sultan (2016)"));
+        pieEntries.add(new PieEntry(602, "Baahubali (2015)"));
+        pieEntries.add(new PieEntry(587, "Sanju (2018)"));
+        pieEntries.add(new PieEntry(569, "Padmaavat (2018)"));
+
         PieDataSet dataSet = new PieDataSet(pieEntries, "KEY");
         dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 
@@ -86,7 +82,7 @@ public class ActorRanks extends AppCompatActivity {
     }
 
     public void showNextChart() {
-        Intent intent = new Intent(this, FilmRanks.class);
+        Intent intent = new Intent(this, ActorRanks.class);
         startActivity(intent);
         finish();
     }
