@@ -187,16 +187,16 @@
 
     <TextView
         android:id="@+id/Story"
-        android:layout_width="389dp"
-        android:layout_height="358dp"
+        android:layout_width="376dp"
+        android:layout_height="541dp"
         android:includeFontPadding="true"
         android:textColor="@android:color/black"
         android:textSize="15sp"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.142" />
 </androidx.constraintlayout.widget.ConstraintLayout>
