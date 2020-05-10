@@ -24,6 +24,9 @@ public class FilmRanks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.film_rank);
 
+        //Creating new list of entries for Pie Chart (MPAndroidChart)
+        //data on films and worldwide grossing from https://www.imdb.com/list/ls063771441/
+
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
         pieEntries.add(new PieEntry(1957, "Dangal (2016)"));
         pieEntries.add(new PieEntry(1807, "Baahubali 2 (2017)"));
@@ -36,14 +39,16 @@ public class FilmRanks extends AppCompatActivity {
         pieEntries.add(new PieEntry(587, "Sanju (2018)"));
         pieEntries.add(new PieEntry(569, "Padmaavat (2018)"));
 
+        //changing color and label of data
         PieDataSet dataSet = new PieDataSet(pieEntries, "KEY");
         dataSet.setColors(ColorTemplate.JOYFUL_COLORS);
 
+        //creating a new pie chart with film data
         PieData data = new PieData(dataSet);
         PieChart chart = findViewById(R.id.pieChart);
         chart.setData(data);
 
-
+        //customizing chart labels, colors, and animation
         data.setValueTextSize(14);
         chart.animateY(1000);
         chart.setEntryLabelTextSize(15);
@@ -57,6 +62,7 @@ public class FilmRanks extends AppCompatActivity {
         chart.setDescription(desc);
         chart.invalidate();
 
+        //button to return to main menu
         Button retMain = findViewById(R.id.cancel);
         retMain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +71,7 @@ public class FilmRanks extends AppCompatActivity {
             }
         });
 
+        //button to return back to first chart activity (actor ranks)
         Button nextChart = findViewById(R.id.nextChart);
         nextChart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,12 +82,14 @@ public class FilmRanks extends AppCompatActivity {
 
     }
 
+    //returning to MainActivity
     public void returnToMain() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
 
+    //displaying previous chart activity (actor ranks)
     public void showNextChart() {
         Intent intent = new Intent(this, ActorRanks.class);
         startActivity(intent);

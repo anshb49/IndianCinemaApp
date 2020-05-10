@@ -19,15 +19,13 @@ import java.util.ArrayList;
 
 public class ActorRanks extends AppCompatActivity {
 
-    private final String[] FILMS = new String[]{"Awara", "Shree 420", "Kati Patang", "Sholay", "QSQT",
-            "Roja", "Guru", "DDLJ", "K3G", "Ghajini", "Lagaan", "Chak De India",
-            "Slumdog Millionaire", "Gully Boy"};
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actor_rank);
+
+        //Creating new list of entries for Pie Chart (MPAndroidChart)
+        //data on actors and number of total releases from https://www.imdb.com/list/ls020280202/
 
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
         pieEntries.add(new PieEntry(111, "Akshay Kumar"));
@@ -40,14 +38,19 @@ public class ActorRanks extends AppCompatActivity {
         pieEntries.add(new PieEntry(68, "Amitabh Bachchan"));
         pieEntries.add(new PieEntry(34, "Aamir Khan"));
         pieEntries.add(new PieEntry(67, "Anil Kapoor"));
+
+        //changing color and label of data
         PieDataSet dataSet = new PieDataSet(pieEntries, "KEY");
         dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 
+
+        //creating a new pie chart with actor data
         PieData data = new PieData(dataSet);
         PieChart chart = findViewById(R.id.pieChart);
         chart.setData(data);
 
 
+        //customizing chart labels, colors, and animation
         data.setValueTextSize(14);
         chart.animateY(1000);
         chart.setEntryLabelTextSize(15);
@@ -55,12 +58,13 @@ public class ActorRanks extends AppCompatActivity {
         chart.setCenterTextSizePixels(30);
         chart.setTransparentCircleRadius(60f);
 
-        // setting description blank and using TextView to label graph instead
+        // setting description blank to remove default description
         Description desc = new Description();
         desc.setText("");
         chart.setDescription(desc);
         chart.invalidate();
 
+        //button to return to main menu
         Button retMain = findViewById(R.id.cancel);
         retMain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +73,7 @@ public class ActorRanks extends AppCompatActivity {
             }
         });
 
+        //button to start next chart activity
         Button nextChart = findViewById(R.id.nextChart);
         nextChart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,12 +84,14 @@ public class ActorRanks extends AppCompatActivity {
 
     }
 
+    //changing current activity to main activity
     public void returnToMain() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
 
+    //changing current activity to next chart activity (film ranks visualization)
     public void showNextChart() {
         Intent intent = new Intent(this, FilmRanks.class);
         startActivity(intent);

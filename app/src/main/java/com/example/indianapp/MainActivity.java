@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //button to launch first chart activity (actor ranks)
         charts = findViewById(R.id.charts);
         charts.setOnClickListener(new View.OnClickListener() {
-            public void onClick (View view) {
+            public void onClick(View view) {
                 openActorRanks();
             }
         });
-
 
 
     }
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //launching actor rank activity
     private void openActorRanks() {
         Intent intent = new Intent(this, ActorRanks.class);
         startActivity(intent);
