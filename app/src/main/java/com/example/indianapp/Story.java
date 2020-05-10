@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -52,6 +53,23 @@ public class Story extends AppCompatActivity {
         fill.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 createStory();
+            }
+        });
+        Button edit = findViewById(R.id.edit);
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView title = findViewById(R.id.Directions);
+                title.setVisibility(View.VISIBLE);
+                hero.setVisibility(View.VISIBLE);
+                heroine.setVisibility(View.VISIBLE);
+                villain.setVisibility(View.VISIBLE);
+                animal.setVisibility(View.VISIBLE);
+                adjective.setVisibility(View.VISIBLE);
+                verb.setVisibility(View.VISIBLE);
+                weapon.setVisibility(View.VISIBLE);
+                city.setVisibility(View.VISIBLE);
+                story.setVisibility(View.GONE);
             }
         });
     }
@@ -100,6 +118,22 @@ public class Story extends AppCompatActivity {
 
         findViewsByIds();
         makeEditTextToString();
+
+
+        TextView title = findViewById(R.id.Directions);
+        title.setVisibility(View.GONE);
+        hero.setVisibility(View.GONE);
+        heroine.setVisibility(View.GONE);
+        villain.setVisibility(View.GONE);
+        animal.setVisibility(View.GONE);
+        adjective.setVisibility(View.GONE);
+        verb.setVisibility(View.GONE);
+        weapon.setVisibility(View.GONE);
+        city.setVisibility(View.GONE);
+        story.setVisibility(View.VISIBLE);
+
+
+
         if (generateRandomNumber() == 1) {
             String madlib = "In this movie which takes place in " + cityName + ", " + adj + " " + heroName +
                     " is enlisted by an ex-police officer. " + "He and his friend were once " +
@@ -136,7 +170,7 @@ public class Story extends AppCompatActivity {
         } else if (generateRandomNumber() == 4) {
             String madLib4 = "In this movie, the main character, " + heroName + " who has amnesia due to the actions of "
                     + villainName + ". Because of his condition, he has to take pictures of everything so he remembers it " +
-                    "as he forgets things every 15 minutes. " +  "Eventually, he starts to form very little memories of " + villainName
+                    "as he forgets things every 15 minutes. " + "Eventually, he starts to form very little memories of " + villainName
                     + " and how he " + action + "ed " + heroineName + ". He begins to plot his revenge by " + action + "ing " + villainName + "'s gang member until he can find out who "
                     + villainName + " actually is. Initially, " + villainName + "does not know he is being targeted until a couple of " +
                     "his gang members are " + action + "ed. This worries him and causes him to begin searching for everyone he has wronged in " +

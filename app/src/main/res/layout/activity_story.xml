@@ -7,6 +7,22 @@
     android:background="#32FF6500"
     tools:context=".Story">
 
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:text="Edit"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
     <TextView
         android:id="@+id/Directions"
         android:layout_width="361dp"
@@ -29,16 +45,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#5B00FFE1"
-        android:text="Fill "
         android:gravity="center"
+        android:text="Fill "
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.963" />
 
     <Button
         android:id="@+id/Cancel"
@@ -50,10 +66,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.963" />
 
     <EditText
         android:id="@+id/Hero"
@@ -174,13 +190,13 @@
         android:layout_width="389dp"
         android:layout_height="358dp"
         android:includeFontPadding="true"
-        android:text="Story"
         android:textColor="@android:color/black"
         android:textSize="15sp"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.01" />
 </androidx.constraintlayout.widget.ConstraintLayout>

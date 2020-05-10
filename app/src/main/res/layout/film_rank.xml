@@ -41,11 +41,12 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="377dp"
-        android:layout_height="82dp"
-        android:text="Highest Grossing Recent Bollywood Films"
+        android:layout_width="395dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="20dp"
+        android:text="Highest Grossing Recent Bollywood Films (in Crores)"
         android:textColor="#111010"
-        android:textSize="32dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

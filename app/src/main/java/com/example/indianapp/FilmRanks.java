@@ -37,7 +37,7 @@ public class FilmRanks extends AppCompatActivity {
         pieEntries.add(new PieEntry(569, "Padmaavat (2018)"));
 
         PieDataSet dataSet = new PieDataSet(pieEntries, "KEY");
-        dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+        dataSet.setColors(ColorTemplate.JOYFUL_COLORS);
 
         PieData data = new PieData(dataSet);
         PieChart chart = findViewById(R.id.pieChart);
