@@ -14,28 +14,31 @@ public class MovieLinks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_links);
 
-        //First Story
+        //this whole section is to embed movie links into the name of the movie
+        //that takes you to the media space page where the movies are shown
+
+        //First Story is based on Sholay
         TextView sholay = findViewById(R.id.Sholay);
         sholay.setClickable(true);
         sholay.setMovementMethod(LinkMovementMethod.getInstance());
         String sholayText = "<a href='https://mediaspace.illinois.edu/media/t/1_84f2dp5z/154364361'> Sholay </a>";
         sholay.setText(Html.fromHtml(sholayText, Html.FROM_HTML_MODE_COMPACT));
 
-        //Second Story
+        //Second Story is based on DDLJ
         TextView ddlj = findViewById(R.id.DDLJ);
         ddlj.setClickable(true);
         ddlj.setMovementMethod(LinkMovementMethod.getInstance());
         String ddljText = "<a href='https://mediaspace.illinois.edu/media/t/1_ovjhpxw9/154364361'> DDLJ </a>";
         ddlj.setText(Html.fromHtml(ddljText, Html.FROM_HTML_MODE_COMPACT));
 
-        //Third Story
+
         TextView shree420 = findViewById(R.id.Shree420);
         shree420.setClickable(true);
         shree420.setMovementMethod(LinkMovementMethod.getInstance());
         String shreeText = "<a href='https://mediaspace.illinois.edu/media/t/1_ao2nqu3e/154364361'> Shree 420 </a>";
         shree420.setText(Html.fromHtml(shreeText, Html.FROM_HTML_MODE_COMPACT));
 
-        //Fourth Story
+        //Fourth Story is based on Ghajini
         TextView ghajini = findViewById(R.id.Ghajini);
         ghajini.setClickable(true);
         ghajini.setMovementMethod(LinkMovementMethod.getInstance());

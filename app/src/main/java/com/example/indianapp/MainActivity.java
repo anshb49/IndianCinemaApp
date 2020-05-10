@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //button to launch Mad Libs screen
         insert = findViewById(R.id.Insert);
         insert.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //button to launch the page with movie links
         movieLinks = findViewById(R.id.insertMovie);
         movieLinks.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -43,11 +45,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //launching Mad Libs page to fill out stories
     private void openInsert() {
         Intent intent = new Intent(this, Story.class);
         startActivity(intent);
     }
 
+    //launching page with movie links
     private void openMovieLinks() {
         Intent intent = new Intent(this, MovieLinks.class);
         startActivity(intent);
